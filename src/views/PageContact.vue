@@ -84,4 +84,19 @@ http://www.w3schools.com/css/css_attribute_selectors.asp
   background-image: url('/img/facebook.png');
 }
 
+@media only screen and (min-width: 480px) {
+
+  .page-contact .col1,
+  .page-contact .col2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+
+  }
+
+  .page-contact .col2 {
+    width: 40%;
+    margin-left: 10%;
+  }
+}
 </style>

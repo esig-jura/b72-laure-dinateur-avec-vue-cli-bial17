@@ -17,6 +17,27 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import('../views/About.vue'),
   },
+  {
+    path: '/accueil',
+    name: 'PageAccueil',
+    component: () => import('../views/PageAccueil.vue'),
+  },
+  {
+    path: '/pagecontact',
+    name: 'PageContact',
+    component: () => import('../views/PageContact.vue'),
+  },
+  {
+    path: '/informations',
+    name: 'PageInformations',
+    component: () => import('../views/PageInformations.vue'),
+  },
+  {
+    path: '/contact',
+    name: 'PageContact',
+    component: () => import('../views/PageContact.vue'),
+  },
+
 ];
 
 const router = new VueRouter({

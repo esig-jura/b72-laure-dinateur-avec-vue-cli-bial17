@@ -31,6 +31,21 @@ export default {
           titre: 'Tableau le chiffre 2',
           description: 'Jeu de fondus',
         },
+        {
+          image: 'img/numbers-06.jpg',
+          titre: 'Tableau le chiffre 6',
+          description: '80\'s style',
+        },
+        {
+          image: 'img/numbers-09.jpg',
+          titre: 'Tableau le chiffre 9',
+          description: 'Travail avec les pinceaux',
+        },
+        {
+          image: 'img/numbers-12.jpg',
+          titre: 'Tableau le chiffre 12',
+          description: 'Répétition de formes',
+        },
       ],
     };
   },

@@ -5,45 +5,37 @@
     <h1>Mes réalisations</h1>
 
     <ul class="realisations">
-      <li>
-        <a href="img/numbers-01.jpg">
+      <li v-for="reali in realisations" :key="reali.image">
+        <a :href="reali.image">
           <figure>
-            <img src="img/numbers-01.jpg" alt="Tableau le chiffre 1">
-            <figcaption>Expérimentation de couleurs</figcaption>
+            <img :src="reali.image" :alt="reali.titre">
+            <figcaption>{{reali.description}}</figcaption>
           </figure>
         </a>
-      </li><li>
-      <a href="img/numbers-02.jpg">
-        <figure>
-          <img src="img/numbers-02.jpg" alt="Tableau le chiffre 2">
-          <figcaption>Jeu de fondus</figcaption>
-        </figure>
-      </a>
-    </li><li>
-      <a href="img/numbers-06.jpg">
-        <figure>
-          <img src="img/numbers-06.jpg" alt="Tableau le chiffre 6">
-          <figcaption>80's style</figcaption>
-        </figure>
-      </a>
-    </li><li>
-      <a href="img/numbers-09.jpg">
-        <figure>
-          <img src="img/numbers-09.jpg" alt="Tableau le chiffre 9">
-          <figcaption>Travail avec les pinceaux</figcaption>
-        </figure>
-      </a>
-    </li><li>
-      <a href="img/numbers-12.jpg">
-        <figure>
-          <img src="img/numbers-12.jpg" alt="Tableau le chiffre 12">
-          <figcaption>Répétition de formes</figcaption>
-        </figure>
-      </a>
-    </li>
+      </li>
     </ul>
   </main>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      realisations: [
+        {
+          image: 'img/numbers-01.jpg',
+          titre: 'Tableau le chiffre 1',
+          description: 'Expérimentation de couleurs',
+        },
+        {
+          image: 'img/numbers-02.jpg',
+          titre: 'Tableau le chiffre 2',
+          description: 'Jeu de fondus',
+        },
+      ],
+    };
+  },
+};
+</script>
 <style scoped>
 
 .realisations {
@@ -81,4 +73,5 @@
     width: calc(100%/3 - 5%);
   }
 }
+
 </style>
